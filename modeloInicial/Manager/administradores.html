@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />  
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Administradores</title>
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/mystyles.css" rel="stylesheet" />
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="img/logo3_title.png" />
+</head>
+<body>
+
+<!-- Alerta de bienvenida -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="popup-close" onclick="ocultarPopup()">&times;</span>
+    <h3>Hola Luchito</h3>
+    <h4>
+      ¡Bienvenido!
+    </h4>
+  </div>
+</div>
+<script>
+  window.onload = function() {
+    mostrarPopup();
+  };
+</script>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg fondo">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="index.html"><img src="img/logo3_1.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2">
+        <div class="input-group ml-40">
+                                                      
+        </div>
+      </ul>
+      <form class="d-flex">
+        <div class="dropdown">
+          <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: 0px " >
+            <a class="navbar-brand" style="color: white;" href="index.html">Luchito <img src="img/avatar2.png" alt="Avatar" class="avatar"> </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Editar perfil</a></li>
+            <li style="color: darkred!important;"><a class="dropdown-item" href="#" style="color: red!important;"><b>Cerrar Sesión</b></a></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</nav>
+<!--Segundo menu-->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class=" nav nav-tabs m-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Administradores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu_juegos.html">Juegos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- tabla de administradores-->
+<div class="contenedorTabla">
+  <div class="container-fluid px-4">
+      <h3 class="mt-4">Lista de administradores</h3>
+
+      <div class="card mb-4">
+          <div class="card-header">
+              <i class="fas fa-table me-1"></i>
+              Tabla
+          </div>
+          <div class="card-body">
+              <table id="datatablesSimple" >
+                  <thead>
+                      <tr>
+                          <th >Nombre / Apellido</th>
+                          <th>Accion</th>
+                          <th>Rol</th>
+                          <th>Último acceso</th>
+                          <th>Ganancia</th>
+                      </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                        <th>Nombre / Apellido</th>
+                        <th>Accion</th>
+                        <th>Rol</th>
+                        <th>Último acceso</th>
+                        <th>Ganancia</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                      <tr>
+                          <td>
+                            <div><img src="img/avatar1.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Rosario Pelaez Marquez</a> </div>
+                          </td>
+                          <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <td><div class="adminletter">Administrador</div></td>
+                          <td><div class="adminletter">Hace 23 horas</div></td>
+                          <td><div class="adminletter">$550.50</div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img src="img/avatar2.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Edgar Ramos Cerezo</a> </div>
+                        </td>
+                        <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <td><div class="adminletter">Administrador</div></td>
+                        <td><div class="adminletter">Hace 1 dia</div></td>
+                        <td><div class="adminletter">$1040.00</div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img src="img/avatar3.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Eleuterio Riquelme</a> </div>
+                        </td>
+                        <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <td><div class="adminletter">Administrador</div></td>
+                        <td><div class="adminletter">Hace 3 horas</div></td>
+                        <td><div class="adminletter">$-45.00</div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img src="img/avatar4.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Ahakira Mamani Quispe</a> </div>
+                        </td>
+                        <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <td><div class="adminletter">Administrador</div></td>
+                        <td><div class="adminletter">Hace 7 horas</div></td>
+                        <td><div class="adminletter">$120.40</div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img src="img/avatar5.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Catalina Gisbert Nixon</a> </div>
+                        </td>
+                        <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <td><div class="adminletter">Administrador</div></td>
+                        <td><div class="adminletter">Hace 14 dias</div></td>
+                        <td><div class="adminletter">$350.50</div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img src="img/avatar1.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Rosario Pelaez Marquez</a> </div>
+                        </td>
+                        <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <td><div class="adminletter">Administrador</div></td>
+                        <td><div class="adminletter">Hace 23 horas</div></td>
+                        <td><div class="adminletter">$550.50</div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img src="img/avatar2.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Edgar Ramos Cerezo</a> </div>
+                        </td>
+                        <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <td><div class="adminletter">Administrador</div></td>
+                        <td><div class="adminletter">Hace 1 dia</div></td>
+                        <td><div class="adminletter">$1040.00</div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img src="img/avatar3.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Eleuterio Riquelme</a> </div>
+                        </td>
+                        <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <td><div class="adminletter">Administrador</div></td>
+                        <td><div class="adminletter">Hace 3 horas</div></td>
+                        <td><div class="adminletter">$-45.00</div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img src="img/avatar4.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Ahakira Mamani Quispe</a> </div>
+                        </td>
+                        <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <td><div class="adminletter">Administrador</div></td>
+                        <td><div class="adminletter">Hace 7 horas</div></td>
+                        <td><div class="adminletter">$120.40</div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img src="img/avatar5.png" alt="Avatar" class="avatar">  <a href="adminfo.html" class="text-decoration-none ">Catalina Gisbert Nixon</a> </div>
+                        </td>
+                        <td><button class="btn boton-despedir btn-block"> <a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Despedir</a></button></td>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea despedir a este administrador(a)?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <td><div class="adminletter">Administrador</div></td>
+                        <td><div class="adminletter">Hace 14 dias</div></td>
+                        <td><div class="adminletter">$350.50</div></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+  <form class="d-flex">
+    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="despedidos.html"><span style = "color:red"><B>Lista de Despedidos</B></span></a></div>
+   
+</form>
+</div>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+<script src="js/datatables-simple-demo.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

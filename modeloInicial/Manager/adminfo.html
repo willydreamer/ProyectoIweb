@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />  
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Administradores</title>
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/mystyles.css" rel="stylesheet" />
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="img/logo3_title.png" />
+
+</head>
+<body>
+
+</script>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg fondo">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="index.html"><img src="img/logo3_1.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2">
+        <div class="input-group ml-40">
+                                                      
+        </div>
+      </ul>
+      <form class="d-flex">
+        <div class="dropdown">
+          <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: 0px " >
+            <a class="navbar-brand" style="color: white;" href="index.html">Luchito <img src="img/avatar2.png" alt="Avatar" class="avatar"> </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Editar perfil</a></li>
+            <li style="color: darkred!important;"><a class="dropdown-item" href="#" style="color: red!important;"><b>Cerrar Sesión</b></a></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--Segundo menu-->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class=" nav nav-tabs m-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="administradores.html">Administradores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu_juegos.html">Juegos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Info del Administrador-->
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 container-fluid mb-4 mb-sm-5">
+                <div class="card card-style1 border-0">
+                    <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+                        <div class="row ">
+                            <div class="text-center col-lg-6 mb-4 mb-lg-0">
+                                <img src="img/avatar3.png" height="150" alt="...">
+                            </div>
+                            <div class="col-lg-6 px-xl-10">
+                                <h2 class="h2 text-bolt-black mb-0">Eleuterio Riquelme</h2>
+                                <span class="h4 text-primary display-28">Administrador</span>
+                                <ul class="list-unstyled mb-1-9">
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-22 text-secondary me-2 font-weight-600">Experiencia:</span> 10 años</li>
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-22 text-secondary me-2 font-weight-600">Email:</span> papi@mail.com</li>
+                                    <li class="display-28"><span class="display-22 text-secondary me-2 font-weight-600">Celular:</span> 991540533</li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class=" nav nav-pills m-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="adminfo.html">Detalles</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="adminpublicaciones.html">Publicaciones</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <!-- Tabla resumen-->
+            <div class="contenedorTabla">
+                <div class="container-fluid px-4">
+             
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-table me-1"></i>
+                            Informe económico
+                        </div>
+                        <div class="card-body">
+                            <table id="datatablesSimple" >
+                                <thead>
+                                    <tr>
+                                        <th>Nombre / videojuego</th>
+                                        <th>Precio Compra</th>
+                                        <th>Precio venta</th>
+                                        <th>Estado</th>
+                                        <th>Ganancia</th>
+                                        <th>Stock</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                  <tr>
+                                    <th>Nombre / videojuego</th>
+                                    <th>Precio Compra</th>
+                                    <th>Precio venta</th>
+                                    <th>Estado</th>
+                                    <th>Ganancia</th>
+                                    <th>Stock</th>
+                                  </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="adminletter">Call of Dutty</div></td>
+                                        <td><div class="adminletter">s/. 50</div></td>
+                                        <td><div class="adminletter">s/. 65</div></td>
+                                        <td><button class="boton-vendido">Vendido</button></td>
+                                        <td><div class="adminletter">s/. 15</div></td>  
+                                        <td><div class="adminletter">0</div></td>                                      
+                                    </tr>
+                                    <tr>
+                                        <td><div class="adminletter">Fall Guys</div></td>
+                                        <td><div class="adminletter">s/. 50</div></td>
+                                        <td><div class="adminletter">s/. 65</div></td>
+                                        <td><button class="boton-publicado">Publicado</button></td>
+                                        <td><div class="adminletter">s/. 15</div></td>
+                                        <td><div class="adminletter">5</div></td>                                          
+                                    </tr>
+                                    <tr>
+                                        <td><div class="adminletter">Dota 2</div></td>
+                                        <td><div class="adminletter">s/. 50</div></td>
+                                        <td><div class="adminletter">s/. 65</div></td>
+                                        <td><button class="boton-vendido">Vendido</button></td>
+                                        <td><div class="adminletter">s/. 15</div></td> 
+                                        <td><div class="adminletter">0</div></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td><div class="adminletter">Mi gato techero2</div></td>
+                                        <td><div class="adminletter">s/. 50</div></td>
+                                        <td><div class="adminletter">s/. 65</div></td>
+                                        <td><button class="boton-vendido">Vendido</button></td>
+                                        <td><div class="adminletter">s/. 15</div></td>  
+                                        <td><div class="adminletter">0</div></td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td><div class="adminletter">Guerra naval</div></td>
+                                        <td><div class="adminletter">s/. 50</div></td>
+                                        <td><div class="adminletter">s/. 65</div></td>
+                                        <td><button class="boton-publicado">publicado</button></td>
+                                        <td><div class="adminletter">s/. 15</div></td> 
+                                        <td><div class="adminletter">3</div></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td><div class="adminletter">Calla ctmr3</div></td>
+                                        <td><div class="adminletter">s/. 50</div></td>
+                                        <td><div class="adminletter">s/. 65</div></td>
+                                        <td><button class="boton-publicado">Publicado</button></td>
+                                        <td><div class="adminletter">s/. 15</div></td>   
+                                        <td><div class="adminletter">4</div></td>                                   
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <!-- Porcentaje de ganancias-->
+            <div class="col-lg-12 ">
+                <div class="row">
+                    <div class="col-lg-9 container-fluid mb-4 mb-sm-5">
+                        <div class="mb-4 mb-sm-5">
+                            <span class="section-title text-primary mb-3 mb-sm-4">Juegos mas vendidos</span>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Driving harder</div>
+                                    <div class="col-6 text-end">20%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium mb-3" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" role="progressbar"></div>
+                            </div>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Soccer 2034</div>
+                                    <div class="col-6 text-end">30%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium mb-3" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:30%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                            </div>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">La sirenita</div>
+                                    <div class="col-6 text-end">20%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium mb-3" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                            </div>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">otros</div>
+                                    <div class="col-6 text-end">30%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:30%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer class="py-5 bg-dark ">
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+<script src="js/datatables-simple-demo.js"></script>
+</body>
+</html>

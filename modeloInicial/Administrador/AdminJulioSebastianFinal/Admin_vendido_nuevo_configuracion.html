@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shop Homepage - Start Bootstrap Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/logo3_title.png" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/stylesss.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mystyles.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fondo">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="caratula.html"><img src="img/logo3_1.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Buscado-->
+                <ul class="navbar-nav m-auto">
+                    <div class="input-group ml-40">
+                      <input class="form-control" type="text" placeholder="Buscar videojuego..." aria-label="Search for..." aria-describedby="btnNavbarSearch">
+                      <button class="btn btn-outline-light" type="submit"><i class="bi-search me-1"></i></button>
+                    </div>
+                </ul>
+                
+                <form class="d-flex">
+                    <!--boton registrar-->
+                    <div class="dropdown">  
+                        <button class="btn mt-auto" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: 0px " >
+                          <a class="text-decoration-none" style="color: white" href="index.html"><img src="img/avatar2.png" height="15px" alt="Avatar" class="avatar">Administrador Lucho </a>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Editar perfil</a></li>
+                          <li style="color: darkred!important;"><a class="dropdown-item" href="#" style="color: red!important;"><b>Cerrar Sesión</b></a></li>
+                        </ul>
+                    </div>
+                    <!--carrito-->
+                    <div style="margin-right: 5px!important;"></div>
+                    <div class="m-auto">
+                        <button class="btn btn-outline-light" type="submit" >
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>  
+                    </div>
+                    
+                </form>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ebf2f3!important;">
+        <div class="container px-4 px-lg-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Juegos Disponibles</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="Configurar_Juego.html">+ Configurar Videojuego</a></li>
+                          <li><a class="dropdown-item" href="nuevo_Juego.html">+ Publicar Nuevo Videojuego</a></li>
+                          <li><a class="dropdown-item" href="Agregrar_promocion.html">+ Agregar Promociones</a></li>
+                          <li><a class="dropdown-item" href="retirar_Videjuego.html">+ Retirar el Videojuego</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Admin_reservado.html">Juegos Reservados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Admin_comprado.html">Juegos Comprados</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Juegos a ser Vendidos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Admin_vendido_existente.html">+ Listar Videojuegos Existentes</a></li>
+                            <li><a class="dropdown-item" href="Admin_vendido_nuevo.html">+ Listar Videojuegos Nuevos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder"></h1>
+            </div>
+        </div>
+    </header>
+    <div class="container-xxl position-relative bg-white d-flex p-0" style="width: 80%;">
+             <!-- Form Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h4><p style="text-align:center">Imagen del juego</p></h4> 
+                            <img class="card-img-top" src="https://static.wikia.nocookie.net/doblaje/images/1/12/Mortal_Kombat11.jpeg/revision/latest?cb=20190208200355&path-prefix=es" alt="..." />                   
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h4><p style="text-align:center">Detalles del videojuego</p></h4>
+                            <form>
+                                <div class="mb-3">
+                                    <h6><label class="form-label">NOMBRE:</label></h6>
+                                    <h6><label class="form-label">Mortal Combat</label></h6>                          
+                                </div>
+                                <div class="mb-3">
+                                    <h6><label class="form-label">DESCRIPICON DEL JUEGO:</label></h6>
+                                    <h6><label class="form-label">En Mortal Kombat los jugadores luchan contra un oponente. Quien acabe primero con la barra de energía del adversario se convierte en el ganador de la primera ronda y quien gane dos rondas es el vencedor de la partida.</label></h6>
+                                    
+                                </div>
+                                <div class="mb-3">
+                                    <h6><label class="form-label">PRECIO(SOLES):</label></h6>
+                                    <h6><label class="form-label">158.00</label></h6>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="card-footer pt-1 br-3 border-top-0">
+                                        <div class="text-center boton-despedir "><a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Rechazar</a></div>
+                                          <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea rechazar esta publicacion?</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                      <div class="input-group mb-3">
+                                                          <span class="input-group-text" id="inputGroup-sizing-default">Ingresa motivo</span>
+                                                          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                                      </div>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Continuar</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <button type="submit" class="btn btn-outline-light mx-0"></button>
+                                      <div class="d-flex justify-content-center">
+                                        <div class="card-footer pt-1 br-3 border-top-0">
+                                            <div class="text-center boton-despedir "><a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Aceptar</a></div>
+                                              <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea aceptar esta publicacion?</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-primary">Continuar</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                          </div>
+                                          <button type="submit" class="btn btn-outline-light mx-0"></button>
+                                          <div class="d-flex justify-content-center">
+                                            <div class="card-footer pt-1 br-3 border-top-0">
+                                                <div class="text-center boton-despedir "><a class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">No Aceptar</a></div>
+                                                  <!-- Modal -->
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                      <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                          <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea no aceptar esta publicacion?</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                          </div>
+                                                          <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-primary">Continuar</button>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                              </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- Content End -->
+    </div>
+
+    <!-- Template Javascript -->
+    <script src="js/mean.js"></script>
+</body>
+
+</html>

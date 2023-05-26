@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>LuchitoAdmin</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/mystyles.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fondo">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="caratula.html"><img src="img/logo3_1.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--Buscado-->
+            <ul class="navbar-nav m-auto">
+                <div class="input-group ml-40">
+                <input class="form-control" type="text" placeholder="Buscar videojuego..." aria-label="Search for..." aria-describedby="btnNavbarSearch">
+                <button class="btn btn-outline-light" type="submit"><i class="bi-search me-1"></i></button>
+                </div>
+            </ul>
+            
+            <form class="d-flex">
+                <!--boton registrar-->
+                <div class="dropdown">  
+                    <button class="btn mt-auto" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: 0px " >
+                    <a class="text-decoration-none" style="color: white" href="index.html"><img src="img/avatar2.png" height="15px" alt="Avatar" class="avatar">Iniciar sesion </a>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Editar perfil</a></li>
+                    <li style="color: darkred!important;"><a class="dropdown-item" href="#" style="color: red!important;"><b>Cerrar Sesión</b></a></li>
+                    </ul>
+                </div>
+                <!--carrito-->
+                <div style="margin-right: 5px!important;"></div>
+                <div class="m-auto">
+                    <button class="btn btn-outline-light" type="submit" >
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>  
+                </div>
+                
+            </form>
+        </div>
+  
+    </div>
+  </nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ebf2f3!important;">
+  <div class="container px-4 px-lg-5">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Juegos disponibles</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Configurar_Juego.html">+ Configurar Videojuego</a></li>
+            <li><a class="dropdown-item" href="nuevo_Juego.html">+ Publicar Nuevo Videojuego</a></li>
+            <li><a class="dropdown-item" href="Agregrar_promocion.html">+ Agregar Promociones</a></li>
+            <li><a class="dropdown-item" href="retirar_Videjuego.html">+ Retirar el Videojuego</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="Admin_reservado.html">Juegos Reservados</a></li>
+        <li class="nav-item"><a class="nav-link" href="Admin_comprado.html">Juegos Comprados</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Juegos a ser Vendidos</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Admin_vendido_existente.html">+ Listar Videojuegos Existentes</a></li>
+            <li><a class="dropdown-item" href="Admin_vendido_nuevo.html">+ Listar Videojuegos Nuevos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Header-->
+ <header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder"></h1>
+        </div>
+    </div>
+</header>
+<!-- Section-->
+<section class="py-8">
+  <div class="container px-4 px-lg-5 mt-5">
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+      <div class="col mb-5">
+        <div class="card h-100">
+          <!-- Product image-->
+          <img class="card-img-top" src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png" alt="..." />
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Product name-->
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">Cantidad Actual: 40</a></h5>
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">----------------------</a></h5>
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">Vendidos(últimos 3 meses): 12</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card h-100">
+          <!-- Product image-->
+          <img class="card-img-top" src="https://elcomercio.pe/resizer/peZ1YmfQ9tqW8sFkUo_vZWEztoU=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6NBHQXYJ4ZATBHF3DWRTEJO34M.jpg" alt="..." />
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Product name-->
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">Cantidad Actual: 4</a></h5>
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">----------------------</a></h5>
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">Vendidos(últimos 3 meses): 15</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card h-100">
+          <!-- Product image-->
+          <img class="card-img-top" src="https://static.wikia.nocookie.net/doblaje/images/1/12/Mortal_Kombat11.jpeg/revision/latest?cb=20190208200355&path-prefix=es" alt="..." />
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Product name-->
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">Cantidad Actual: 40</a></h5>
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">----------------------</a></h5>
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">Vendidos(últimos 3 meses): 12</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card h-100">
+          <!-- Product image-->
+          <img class="card-img-top" src="https://www.profesionalreview.com/wp-content/uploads/2018/07/World-of-Warcraft-se-actualiza-con-soporte-para-DirectX-12.jpg" alt="..." />
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Product name-->
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">Cantidad Actual: 40</a></h5>
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">----------------------</a></h5>
+              <h5 class="fw-bolder"> <a href="#!" class="ProductName">Vendidos(últimos 3 meses): 12</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card h-100">
+          <!-- Product image-->
+          <img class="card-img-top" src="https://e.rpp-noticias.io/normal/2020/09/03/033103_991483.png" alt="..." />
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+             <!-- Product name-->
+             <h5 class="fw-bolder"> <a href="#!" class="ProductName">Cantidad Actual: 40</a></h5>
+             <h5 class="fw-bolder"> <a href="#!" class="ProductName">----------------------</a></h5>
+             <h5 class="fw-bolder"> <a href="#!" class="ProductName">Vendidos(últimos 3 meses): 12</a></h5>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card h-100">
+          <!-- Product image-->
+          <img class="card-img-top" src="https://i.blogs.es/8d8faf/prince_of_persia_the_sands_of_time-front/450_1000.jpg" alt="..." />
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+            <!-- Product name-->
+            <h5 class="fw-bolder"> <a href="#!" class="ProductName">Cantidad Actual: 40</a></h5>
+            <h5 class="fw-bolder"> <a href="#!" class="ProductName">----------------------</a></h5>
+            <h5 class="fw-bolder"> <a href="#!" class="ProductName">Vendidos(últimos 3 meses): 12</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card h-100">
+          <!-- Product image-->
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCvplVgyRkD8AmdStKMi6iVnrMpwuIzqyq623rnfYyR6RTmSnhYwjiqEDxcavnzAIV0c&usqp=CAU" alt="..." />
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Product name-->
+            <h5 class="fw-bolder"> <a href="#!" class="ProductName">Cantidad Actual: 40</a></h5>
+            <h5 class="fw-bolder"> <a href="#!" class="ProductName">----------------------</a></h5>
+            <h5 class="fw-bolder"> <a href="#!" class="ProductName">Vendidos(últimos 3 meses): 12</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card h-100">
+          <!-- Product image-->
+          <img class="card-img-top" src="https://www.somosxbox.com/wp-content/uploads/2020/01/Sombras_guerra_portada.jpg" alt="..." />
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+               <!-- Product name-->
+            <h5 class="fw-bolder"> <a href="#!" class="ProductName">Cantidad Actual: 40</a></h5>
+            <h5 class="fw-bolder"> <a href="#!" class="ProductName">----------------------</a></h5>
+            <h5 class="fw-bolder"> <a href="#!" class="ProductName">Vendidos(últimos 3 meses): 12</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
